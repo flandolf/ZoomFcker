@@ -24,7 +24,9 @@ To do option 2:
 
 Enjoy!
 
-
+# Contact Me!
+Discord: dumpy#6994
+Email: andy@dumpy.gq
 
  
 
