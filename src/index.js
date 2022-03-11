@@ -12,7 +12,7 @@ const readline = require("readline").createInterface({
 var platform = os.platform();
 var home = os.homedir();
 
-var zoompath = path.join(home, "AppData", "Roaming", "Zoom2");
+var zoompath = path.join(home, "AppData", "Roaming", "Zoom");
 
 function main() {
     console.log(`
