@@ -1,0 +1,21 @@
+{
+  "name": "zoomfcker",
+  "version": "1.0.0",
+  "description": "I hate zoom",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dumpy",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "pkg": {
+    "scripts": "src/.js",
+    "assets": "",
+    "targets": [ "node17-win-x64" ],
+    "outputPath": "release"
+  }
+}
