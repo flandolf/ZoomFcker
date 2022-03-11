@@ -1,4 +1,6 @@
 # ZoomFcker 
+![lic](https://img.shields.io/badge/License-MIT-yellowgreen)
+
 > Made by Dumpy! Do not sell.
 
 
