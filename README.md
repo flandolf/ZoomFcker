@@ -1,5 +1,5 @@
 # ZoomFcker 
-![lic](https://img.shields.io/badge/License-MIT-yellowgreen)
+![lic](https://img.shields.io/badge/License-MIT-yellowgreen) ![com](https://img.shields.io/github/last-commit/dumpydev/ZoomFcker?style=plastic)
 
 > Made by Dumpy! Do not sell.
 
