@@ -1,4 +1,4 @@
-# ZoomFcker
+# ZoomFcker !https://raw.githubusercontent.com/dumpydev/ZoomFcker/master/assets/ICON.ico
 > Made by Dumpy! Do not sell.
 # How it works
 
