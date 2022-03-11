@@ -1,6 +1,8 @@
 # ZoomFcker 
 > Made by Dumpy! Do not sell.
-!(https://raw.githubusercontent.com/dumpydev/ZoomFcker/master/assets/ICON.ico)
+
+
+![icon](https://raw.githubusercontent.com/dumpydev/ZoomFcker/master/assets/ICON.ico)
 # How it works
 
    Node Js and Epic coding skills 😎
