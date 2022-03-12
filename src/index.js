@@ -1,3 +1,12 @@
+/*
+Info
+Name: ZoomFcker
+Version: 1.1
+Author: Dumpy
+Repo: https://github.com/dumpydev/zoomfcker
+
+*/
+
 const os = require("os");
 const path = require("path");
 const fs = require("fs");

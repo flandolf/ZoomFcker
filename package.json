@@ -10,12 +10,16 @@
   "author": "Dumpy",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "npm": "^8.5.4"
   },
   "pkg": {
     "scripts": "src/.js",
     "assets": "",
-    "targets": [ "node17-win-x64" ],
+    "targets": [
+      "node17-win-x64",
+      "node17-linux-x64"
+    ],
     "outputPath": "release"
   }
 }
