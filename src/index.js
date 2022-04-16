@@ -39,6 +39,9 @@ function main() {
 
 function deleteZoom() {
   if (platform.toLocaleLowerCase() === "darwin") {
+    fs.rmdir(path.join('Applications', 'zoom.us'), () => {
+      console.log('Something went wrong...')
+    })
     console.log("MacOS not supported.... Sorry!");
     rl.question("", function (answer) {
       rl.close();
