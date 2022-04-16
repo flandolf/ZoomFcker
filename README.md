@@ -13,8 +13,7 @@
 To install either
 1. Download the EXE
 2. Build from source
-
-To do option 2:
+# Steps to build from source
 1. run ``git clone https://github.com/dumpydev/ZoomFcker``
 2. cd into the directory
 3. run ``npm i`` to install dependencies

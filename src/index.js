@@ -13,7 +13,7 @@ const fs = require("fs");
 const { exec } = require("child_process");
 var colors = require('colors');
 
-const readline = require("readline").createInterface({
+const rl = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -37,7 +37,10 @@ function main() {
 
 function deleteZoom() {
   if (platform.toLocaleLowerCase() === "darwin") {
-    console.log("MacOS");
+    console.log("MacOS not supported.... Sorry!");
+    rl.question("Thanks for using this tool. ", function(answer) {
+      rl.close();
+    });
   } else if (platform.toLocaleLowerCase() === "win32") {
     fs.rmdir(zoompath, () => {
       console.log(`
@@ -45,7 +48,11 @@ function deleteZoom() {
       | Zoom Deleted |
       ----------------
       `.red);
+      rl.question("Thanks for using this tool. ".rainbow, function(answer) {
+        rl.close();
+      });
     });
+    
   }
 }
 
