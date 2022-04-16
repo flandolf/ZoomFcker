@@ -10,8 +10,9 @@ Repo: https://github.com/dumpydev/zoomfcker
 const os = require("os");
 const path = require("path");
 const fs = require("fs");
+const figlet = require("figlet");
 const { exec } = require("child_process");
-var colors = require('colors');
+var colors = require("colors");
 
 const rl = require("readline").createInterface({
   input: process.stdin,
@@ -24,35 +25,38 @@ var home = os.homedir();
 var zoompath = path.join(home, "AppData", "Roaming", "Zoom");
 
 function main() {
-    console.log(`
-    --------------------------------
-    |      ZOOM ZOOM BYE BYE       |
-    |              V1              |
-    --------------------------------
-    `.rainbow)   
+  figlet("Zoom-F", function (err, data) {
+    if (err) {
+      console.log("Something went wrong...");
+      console.dir(err);
+      return;
+    }
+    console.log(data);
+  });
 
   deleteZoom();
-  
 }
 
 function deleteZoom() {
   if (platform.toLocaleLowerCase() === "darwin") {
     console.log("MacOS not supported.... Sorry!");
-    rl.question("Thanks for using this tool. ", function(answer) {
+    rl.question("", function (answer) {
       rl.close();
     });
   } else if (platform.toLocaleLowerCase() === "win32") {
     fs.rmdir(zoompath, () => {
-      console.log(`
-      ----------------
-      | Zoom Deleted |
-      ----------------
-      `.red);
-      rl.question("Thanks for using this tool. ".rainbow, function(answer) {
+      figlet("Zoom Deleted.", function (err, data) {
+        if (err) {
+          console.log("Something went wrong...");
+          console.dir(err);
+          return;
+        }
+        console.log(data);
+      });
+      rl.question("".rainbow, function (answer) {
         rl.close();
       });
     });
-    
   }
 }
 
