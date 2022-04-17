@@ -9,26 +9,25 @@ zoompath = os.path.join(home, "AppData", "Roaming", "Zoom")
 init(autoreset=True)
 print(Fore.RED + "Deleting Zoom...")
 osplatform = str(platform.system())
-if osplatform == 'Windows':
+if osplatform == "Windows":
     try:
         shutil.rmtree(zoompath)
-        print(Fore.GREEN + 'Zoom Deleted.')
-        input('')
+        print(Fore.GREEN + "Successfully deleted Zoom!")
+        input("")
     except FileNotFoundError:
-        print(Fore.RED + 'Error Occured.')
-        input('')
-elif osplatform == 'Darwin':
+        print(Fore.RED + "Couldn't delete Zoom.")
+        input("")
+elif osplatform == "Darwin":
     try:
         shutil.rmtree("/Applications/zoom.us.app")
-        print(Fore.GREEN + 'Zoom Deleted.')
+        print(Fore.GREEN + "Successfully deleted Zoom!")
     except FileNotFoundError:
-        print(Fore.RED + 'Error Occured.')
+        print(Fore.RED + "Couldn't delete Zoom.")
         print(Fore.GREEN + "Trying Alternative Option...")
-        try:    
-            shutil.rmtree("sudo rm /Applications/zoom.us.app")
+        try:
+            shutil.rmtree(home + "/Applications/zoom.us.app")
+            print(Fore.GREEN + "Successfully deleted Zoom!")
         except OSError:
-            print('Alternate Method Failed.')
+            print("Alternate method failed. Either you don't have Zoom installed or you didn't give your Terminal application Full Disk Access permission.")
 
 sys.exit(0)
-
-input('')
