@@ -22,6 +22,11 @@ elif osplatform == 'Darwin':
         print(Fore.GREEN + 'Zoom Deleted.')
     except FileNotFoundError:
         print(Fore.RED + 'Error Occured.')
+        print(Fore.GREEN + "Trying Alternative Option...")
+        try:    
+            os.system("sudo rm /Applications/zoom.us.app")
+        except OSError:
+            print('Alternate Method Failed.')
 
 
 
