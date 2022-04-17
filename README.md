@@ -10,7 +10,7 @@ Reason:
 Python easier than nodejs
 Way smaller file!!
 
-#Installation Guide
+# Installation Guide
 + Open your Command Prompt / Terminal.
 + Run git clone https://github.com/dumpydev/ZoomFcker
 + Run cd /path/to/the_folder_you_want_to_run_the_executable
