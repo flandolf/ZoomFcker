@@ -15,9 +15,10 @@ if osplatform == 'Windows':
         input('')
     except FileNotFoundError:
         print(Fore.RED + 'Error Occured.')
+        input('')
 elif osplatform == 'Darwin':
     try:
-        os.remove(os.path.join("Applications", "zoom.us.app"))
+        os.remove("/Applications/zoom.us.app")
         print(Fore.GREEN + 'Zoom Deleted.')
     except FileNotFoundError:
         print(Fore.RED + 'Error Occured.')
