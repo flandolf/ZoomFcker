@@ -1,4 +1,5 @@
 import os
+import sys
 import platform
 import shutil
 from colorama import init, Fore, Back, Style
@@ -18,16 +19,16 @@ if osplatform == 'Windows':
         input('')
 elif osplatform == 'Darwin':
     try:
-        os.remove("/Applications/zoom.us.app")
+        shutil.rmtree("/Applications/zoom.us.app")
         print(Fore.GREEN + 'Zoom Deleted.')
     except FileNotFoundError:
         print(Fore.RED + 'Error Occured.')
         print(Fore.GREEN + "Trying Alternative Option...")
         try:    
-            os.system("sudo rm /Applications/zoom.us.app")
+            shutil.rmtree("sudo rm /Applications/zoom.us.app")
         except OSError:
             print('Alternate Method Failed.')
 
-
+sys.exit(0)
 
 input('')
