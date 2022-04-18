@@ -1,1 +1,1 @@
-pip install -r requirements.txt
+pyinstaller --noconfirm --onefile --console --icon "C:/Users/mindl/OneDrive/Documents/zoomfpy/ICON.ico" --name %1  "C:/Users/mindl/OneDrive/Documents/zoomfpy/main.py"
