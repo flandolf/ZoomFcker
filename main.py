@@ -13,10 +13,8 @@ if osplatform == "Windows":
     try:
         shutil.rmtree(zoompath)
         print(Fore.GREEN + "Successfully deleted Zoom!")
-        input("")
     except FileNotFoundError:
         print(Fore.RED + "Couldn't delete Zoom.")
-        input("")
 elif osplatform == "Darwin":
     try:
         shutil.rmtree("/Applications/zoom.us.app")
@@ -29,5 +27,5 @@ elif osplatform == "Darwin":
             print(Fore.GREEN + "Successfully deleted Zoom!")
         except OSError:
             print("Alternate method failed. Either you don't have Zoom installed or you didn't give your Terminal application Full Disk Access permission.")
-
+input("")
 sys.exit(0)
